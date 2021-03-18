@@ -1,5 +1,7 @@
 **FACE-RECOGNITION-USING-PYTHON**
+
 **Introduction**
+
 Face Recognition is a simple project developed using Python.
 
 The project is developed by using Siamese Neural Network Facial recognition has many benefits in society, including increasing safety and security and preventing crimes.
@@ -55,6 +57,7 @@ Features with alternating regions of dark and light pixels are known as Haar fea
 Face recognition: For each detected face in the image, we run it through a neural network to classify the subject.
 
 **One-shot learning**
+
 Given the unique requirements and constraints faced by facial recognition systems, it is clear that the paradigm of training a CNN for classification using a huge dataset (known as batch learning classification) is unsuitable for the facial recognition problem.
 
 Instead, our objective is to create a neural network that can learn to recognize any face using just a single training sample.
@@ -62,6 +65,7 @@ Instead, our objective is to create a neural network that can learn to recognize
 This form of neural network training is known as one-shot learning.
 
 **The following tasks should be performed when determining whether the presented face belongs to an arbitrary person (say person A):**
+
 Retrieve the stored image of person A (obtained during the onboarding process). This is the true image of person A.
 
 At testing time (for example, when someone is is trying to unlock the phone of person A), capture the image of the person. This is the test image.
@@ -71,6 +75,7 @@ Using the true photo and the test photo, the neural network should output a simi
 If the similarity score output by the neural network is below a certain threshold (that is, the people in the two photos look dissimilar), we deny access, and if they are above the threshold, we grant access.
 
 **The faces dataset**
+
 The dataset that we have chosen is the Database of Faces, created by AT&T Laboratories, Cambridge.
 
 The database contains photos of 40 subjects, with 10 photos of each subject.
@@ -82,6 +87,7 @@ For certain subjects, multiple photos were taken of people with and without glas
 You may visit the website at https://www.kaggle.com/kasikrit/att-database-of-faces to access the AT&T faces dataset.
 
 **Siamese Neural Networks**
+
 The term Siamese means twins.
 
 When training a Siamese network, 2 or more inputs are encoded and the output features are compared.
@@ -95,6 +101,7 @@ We can create the top and bottom convolutional network using this single instanc
 Because we are reusing this single instance, Keras will automatically understand that the weights are to be shared.
 
 **Model training in Keras**
+
 Training a Siamese neural network is slightly different than training a regular CNN.
 
 When training a CNN, the training samples are arrays of images, along with the corresponding class label for each image.
