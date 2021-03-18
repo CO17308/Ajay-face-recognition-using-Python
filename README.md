@@ -17,7 +17,7 @@ We have trained and implemented a robust model that can recognize faces, even wh
 Program that uses the pre-trained neural network and a webcam, to authenticate the user sitting in front of the computer.
 
 Technical requirements
-The following Python libraries are required for this chapter:
+The following Python libraries are required for this project:
 
 Numpy 1.15.2
 
